@@ -1,0 +1,12 @@
+BeautifulSoup : 爬去知乎用到Beautiful Soup 来获取到登录页面,找到验证码图片url,并且进行下载,获取到验证吗  进行登录 
+
+duanzi:duanzi.py 爬去的内涵段子 用selenium和 PhantomJS 获取页面 因为不是分页，而是通过js点击获取后面段子，通过循环下拉和点击事件 来获取到后面的数据获取
+
+
+zhenai：（珍爱网） 使用了scrapy框架，redis和mysql数据库，用scrapy的RedisSpider实现的一个全栈分布式爬虫，因为js文件繁多为节约时间，然后通过分析扒去页面的城市html,年龄,性别等,来做的一个筛选条件爬去页面并找到详情页的url,将其详情页的id，昵称，身高等进行爬去，并存入redis缓存数据库，再通过redis进行存入mysql数据库。
+
+
+Zhaopin:(智联招聘)使用了scray框架redis和MySQL数据库，用RedisSpider和RedisCrawlSpider两种不同的方法实现可全栈分布式爬虫,通过获取到js数据接口,然后用正则匹配出需要的数据,做一个筛选条件,准确的爬去详情页需要的数据并存入redis缓存数据库，再通过redis进行存入mysql数据库。
+
+因数据量庞大 两个网站我都只测试性的只怕去了10数据量
+
